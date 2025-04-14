@@ -7,10 +7,7 @@ import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent
 import com.myorg.model.Session;
 import com.myorg.service.SessionService;
 import com.google.gson.Gson;
-/**
- * Handler for creating a new session.
- * This Lambda function is triggered by an API Gateway POST request to /session/therapist/{therapistId}.
- */
+
 public class CreateSessionHandler implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 
     // Service layer to handle business logic

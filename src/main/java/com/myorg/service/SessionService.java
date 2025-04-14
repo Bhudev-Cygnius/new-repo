@@ -73,12 +73,7 @@ public class SessionService {
         return sessionRepository.findSessionsByStatus("Available");
     }
 
-    /**
-     * Searches sessions by a keyword in the shared notes.
-     *
-     * @param keyword The keyword to search for.
-     * @return A list of matching sessions.
-     */
+    
     public List<Session> searchSessions(String keyword) {
         // Query DynamoDB for sessions containing the keyword in sharedNotes
         return sessionRepository.findSessionsByKeyword(keyword);

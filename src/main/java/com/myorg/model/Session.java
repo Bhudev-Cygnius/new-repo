@@ -13,7 +13,7 @@ public class Session {
     private String privateNotes;   // Private notes for the therapist
     private String sharedNotes;    // Shared notes with the client
 
-    // Getters and Setters
+    
     public String getSessionId() {
         return sessionId;
     }
